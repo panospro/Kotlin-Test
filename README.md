@@ -6,7 +6,7 @@ This is the code you can use to follow the book.
 
 Are you tired of using an ancient, inexpressive and unsafe language to develop your Android apps? Do you cry out loud every time you see a Null Pointer Exception in your bug tracker? Then Kotlin is your solution! A language specifically created for Java developers, easy to learn, expressive, null safe and really intuitive. Your productivity will boost and your apps will become more robust. Learn Kotlin the easy way by example and discover the tricks that will make coding easier.
 
-And now, it's officially supported by Google!
+And now, it's officially supported by Google! 
 
 ![Kotlin for Android Developers cover](art/kotlin-android-developers.png?raw=true)
 
