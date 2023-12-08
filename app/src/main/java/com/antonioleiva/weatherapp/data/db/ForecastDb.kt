@@ -17,6 +17,10 @@ class ForecastDb(private val forecastDbHelper: ForecastDbHelper = ForecastDbHelp
                 .whereSimple(dailyRequest, zipCode.toString(), date.toString())
                 .parseList { DayForecast(HashMap(it)) }
 
+        val dailyForecast = select(DayForecastTable.NAME)
+                .whereSimple(dailyRequest, zipCode.toString(), date.toString())
+                .parseList { DayForecast(HashMap(it)) }
+
         val city = select(CityForecastTable.NAME)
                 .whereSimple("${CityForecastTable.ID} = ?", zipCode.toString())
                 .parseOpt { CityForecast(HashMap(it), dailyForecast) }
